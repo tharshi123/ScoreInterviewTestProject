@@ -12,18 +12,6 @@ import util.PropertiesReader;
 
 public class ChooseLeagues extends BaseClass{
 	
-
-	/*
-	 * public String getFavLeagueTitle() {
-	 * 
-	 * //if pop-up opened, then close it // closePopUp(); //verify the tab name
-	 * 
-	 * ///String title =driver.findElement(chooseFavLeagueTab).getText(); String
-	 * pgTitle =oCC.getThePgTitle(); System.out.println("Tab name is : "+
-	 * driver.findElement(chooseFavLeagueTab).getText()); return title;
-	 * 
-	 * }
-	 */
 	 
 	
 	
