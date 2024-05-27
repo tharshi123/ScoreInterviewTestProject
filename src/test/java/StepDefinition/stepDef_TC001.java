@@ -137,6 +137,7 @@ public class stepDef_TC001 {
 
 		oCC.clickDoNotAllowInPopUp();
 		oBL.dismissTheModalWindow();
+		oCC.clickMayBeLaterForEmailSignUp();
 		Boolean isSearchBarDisplayed = oTPN.isNewsSearchBoxDisplayed();
 		Assert.assertTrue(isSearchBarDisplayed);
 		System.out.println("Team Player news page");
