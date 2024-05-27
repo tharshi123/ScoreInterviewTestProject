@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = { "src/test/resources/Features"},
 		glue = {"StepDefinition","BaseStep"},
-		tags = "@tag1",
+		tags = "@tag6",
 		plugin= {"pretty"}
 		)
 		
