@@ -5,6 +5,7 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Test;
 import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,8 +26,7 @@ public class BaseClass {
 	//int iBrowserType = 1; //1- chrome, 2- FF, 3- Edge , 4 -IE
 	public static AppiumDriver driver;
 	
-	
-	
+
 	@Before
 	public static void loadApp() throws Exception {
 		System.out.println("Before class : we setting up driver and opennign teh app here!");
@@ -52,7 +52,7 @@ public class BaseClass {
 		
 	}
 	
-
+	
 	@After
 	public static void closeBrowser() {
 		System.out.println("After class : we are closing the driver!");

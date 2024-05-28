@@ -11,11 +11,14 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = { "src/test/resources/Features"},
 		glue = {"StepDefinition","BaseStep"},
-		tags = "@tag6",
+		tags = "@tag9",
 		plugin= {"pretty"}
+		//plugin = {"pretty","json:target/Reports/Search.json","html:target/Reports/Search.html",
+		  //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
+		
 		)
 		
-	
-public class scoreRunner {
+public class testUnitRunner {
 
 }
