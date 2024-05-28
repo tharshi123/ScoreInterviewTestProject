@@ -124,7 +124,7 @@ public class CommonComponents extends BaseClass {
 	}
 
 	public void dismissTheModalWindow() {
-		// System.out.println("+++++++++++++++ Tryint to close the Modal window ");
+		
 		if (scoreBetLiveWindowOpened()) {
 			driver.findElement(closeButtonInModalWindow).click();
 			System.out.println("Modal window gets closed");
