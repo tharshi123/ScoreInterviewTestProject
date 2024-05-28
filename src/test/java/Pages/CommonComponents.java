@@ -7,7 +7,7 @@ import BaseStep.BaseClass;
 
 public class CommonComponents extends BaseClass {
 
-	// common elements/features thoroughout the flow
+	// common elements/features throughout the flow
 	private By continueButton = By.id("com.fivemobile.thescore:id/action_button_text");
 	private By mayBeLinkInPopUp = By.id("com.fivemobile.thescore:id/btn_disallow");
 	private By pgTitle = By.id("com.fivemobile.thescore:id/title_onboarding");

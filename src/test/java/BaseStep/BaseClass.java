@@ -2,28 +2,14 @@ package BaseStep;
 
 
 import java.net.URL;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.SessionNotCreatedException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
+
 import io.cucumber.java.Scenario;
 
 import org.openqa.selenium.TakesScreenshot;
