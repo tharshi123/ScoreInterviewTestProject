@@ -19,12 +19,11 @@ public class ChooseFavTeam extends BaseClass{
 			
 			//Reading fav Team name from Data file
 		 	String teamName = PropertiesReader.getPropertyValue(fileName, key);
-			System.out.println("*****Fav Team name****:  "+ teamName);
+			System.out.println("**Fav Team name, read from data file***:  "+ teamName);
 	
 			
 			String favTeamXpath= "//android.widget.TextView[@text="+teamName+"]";
-			System.out.println("***** " +favTeamXpath);
-			
+					
 			driver.findElement(By.xpath(favTeamXpath)).click();
 		
 		}

@@ -13,12 +13,14 @@ public class CommonComponents extends BaseClass {
 	private By pgTitle = By.id("com.fivemobile.thescore:id/title_onboarding");
 	private By permissionDenyButton = By.id("com.android.permissioncontroller:id/permission_deny_button");
 	private By laterForEmailSignUp = By.id("com.fivemobile.thescore:id/btn_secondary");
-
+	private By closeButtonInModalWindow = By.id("com.fivemobile.thescore:id/dismiss_modal");
+	
 	public void clickContineuButton() {
 
 		driver.findElement(continueButton).click();
 		closePopUp();
-
+		clickDoNotAllowInPopUp();
+		dismissTheModalWindow();
 	}
 
 	public void closePopUp() {
@@ -95,4 +97,39 @@ public class CommonComponents extends BaseClass {
 		}
 	}
 
+	
+	
+	
+
+	public boolean scoreBetLiveWindowOpened() {
+
+		boolean modaWindowOpened = false;
+		try {
+			// instead of pop up window i am testing pop up close button here
+			driver.findElement(closeButtonInModalWindow);
+
+			System.out.println("Score Live Bet modal window displaying");
+			modaWindowOpened = true;
+
+		}
+
+		catch (Exception e) {
+
+			System.out.println("Score Live Bet modal window is not displaying ");
+			// System.out.println(e.getMessage());
+
+		}
+
+		return modaWindowOpened;
+	}
+
+	public void dismissTheModalWindow() {
+		// System.out.println("+++++++++++++++ Tryint to close the Modal window ");
+		if (scoreBetLiveWindowOpened()) {
+			driver.findElement(closeButtonInModalWindow).click();
+			System.out.println("Modal window gets closed");
+		}
+	}
+
+	
 }

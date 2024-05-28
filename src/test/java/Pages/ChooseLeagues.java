@@ -18,10 +18,10 @@ public class ChooseLeagues extends BaseClass{
 	public void selectFavLeagues(String fileName, String key) {
 		//Reading Fav leagues from data file
 		String leagueName = PropertiesReader.getPropertyValue(fileName, key);
-		System.out.println("*****FavLeague name****:  "+ leagueName);
+		System.out.println("*FavLeague name Read from properties file**:  "+ leagueName);
 		
 		String favLeagueXpath= "//android.widget.TextView[@text="+leagueName+"]";
-		System.out.println("***** " +favLeagueXpath);
+		//System.out.println("***** " +favLeagueXpath);
 		
 		driver.findElement(By.xpath(favLeagueXpath)).click();
 	}
