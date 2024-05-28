@@ -12,7 +12,7 @@ import util.PropertiesReader;
 
 public class BetIsLiveWindow extends BaseClass {
 
-//	private By closeButtonInModalWindow = By.xpath("//android.widget.ImageView[@resource-id=\"com.fivemobile.thescore:id/dismiss_modal\"]");
+
 
 	private By closeButtonInModalWindow = By.id("com.fivemobile.thescore:id/dismiss_modal");
 
